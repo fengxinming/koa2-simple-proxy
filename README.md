@@ -6,7 +6,7 @@
 
 # Usage
 
-> Note: if you use [`api` and `api2`] as prefixes, the `api2` should be in front of the `api`
+> Note: if you use [`/api` and `/api2`] as prefixes, the `/api2` should be in front of the `/api`
 
 ```bash
 
