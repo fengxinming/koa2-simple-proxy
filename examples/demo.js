@@ -1,15 +1,3 @@
-# koa2-http-proxy
-
-> Note: that `koa2-http-proxy` supports for koa2
-
-<br/>
-
-# Usage
-
-> Note: if you use [`api` and `api2`] as prefixes, the `api2` should be in front of the `api`
-
-```bash
-
 const Koa = require('koa');
 const proxy = require('../index');
 const app = new Koa();
@@ -42,5 +30,3 @@ app.use(async ctx => {
 app.listen(9527, () => {
   console.log(`Listening on 9527`);
 });
-
-```

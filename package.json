@@ -1,0 +1,31 @@
+{
+  "name": "koa2-http-proxy",
+  "version": "1.0.0",
+  "description": "simple http-proxy for koa2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/koa2-http-proxy.git"
+  },
+  "keywords": [
+    "http-proxy",
+    "koa2",
+    "http",
+    "proxy"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/koa2-http-proxy/issues"
+  },
+  "homepage": "https://github.com/fengxinming/koa2-http-proxy#readme",
+  "devDependencies": {
+    "koa": "^2.4.1"
+  },
+  "dependencies": {
+    "http-proxy": "^1.16.2"
+  }
+}
