@@ -21,6 +21,19 @@ app.use(async(ctx, next) => {
 // proxy
 app.use(proxy('/rest', 'http://192.168.1.240/api2'));
 app.use(proxy(['/api2', '/api'], 'http://192.168.1.240/api2'));
+app.use(proxy('/rest2', 'http://192.168.1.240/api2', {
+  events: {
+    error(err, req, res) {
+      res.writeHead(500, err.message, {
+        'Content-Type': 'application/json'
+      });
+      res.end(JSON.stringify(Object.assign({}, err, {
+        message: err.message, // 有时候message字段不能被输出
+        url: req.url
+      })));
+    }
+  }
+}));
 
 // response
 app.use(async ctx => {

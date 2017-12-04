@@ -23,7 +23,17 @@ function proxyMiddleware(prefix, target, options) {
         target: target
       };
     }
+
     options = options || {};
+    const events = options.events;
+    if (events) {
+      Object.keys(events).forEach((key) => {
+        const fn = events[key];
+        if (typeof fn === 'function') {
+          proxy.on(key, fn);
+        }
+      });
+    }
 
     if (typeof prefix === 'string') {
       return (ctx, next) => {
