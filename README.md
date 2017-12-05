@@ -1,6 +1,6 @@
-# koa2-http-proxy
+# koa2-simple-proxy
 
-> Note: that `koa2-http-proxy` supports for koa2
+> Note: that `koa2-simple-proxy` supports for koa2
 
 <br/>
 
@@ -11,7 +11,7 @@
 ```bash
 
 const Koa = require('koa');
-const proxy = require('../index');
+const proxy = require('koa2-simple-proxy');
 const app = new Koa();
 
 // x-response-time
