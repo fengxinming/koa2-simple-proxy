@@ -21,7 +21,7 @@ app.use(async(ctx, next) => {
 // proxy
 app.use(proxy('/rest', 'http://192.168.1.240/api2'));
 app.use(proxy(['/api2', '/api'], 'http://192.168.1.240/api2'));
-app.use(proxy('/rest2', 'http://192.168.1.240/api2', {
+app.use(proxy('/api3', 'http://192.168.1.240/api2', {
   events: {
     error(err, req, res) {
       res.writeHead(500, err.message, {
