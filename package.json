@@ -1,5 +1,5 @@
 {
-  "name": "koa2-http-proxy",
+  "name": "koa2-simple-proxy",
   "version": "1.0.0",
   "description": "simple http-proxy for koa2",
   "main": "index.js",
