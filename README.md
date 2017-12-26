@@ -1,10 +1,27 @@
 # koa2-simple-proxy
 
 > Note: that `koa2-simple-proxy` supports for koa2
+> Note: 对http-proxy的简易封装，支持koa2
+
+<br/>
+
+# Features
+
+## Framework
+* Node >= 7.6
+* Koa >= 2.0
 
 <br/>
 
 # Usage
+
+```bash
+$ cnpm install koa2-simple-proxy --save
+```
+
+<br/>
+
+# Development
 
 > Note: if you use [`/api` and `/api2`] as prefixes, the `/api2` should be in front of the `/api`
 
